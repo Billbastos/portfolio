@@ -1,4 +1,4 @@
-const Post = ({ params }) => {
+const PostPage = ({ params }) => {
   return (
     <main>
       <h1>Blog Post Page</h1>
@@ -7,4 +7,4 @@ const Post = ({ params }) => {
   )
 }
 
-export default Post
+export default PostPage

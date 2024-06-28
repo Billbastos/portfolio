@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Blog = () => {
+const BlogPage = () => {
   return (
     <main>
       <h1>Blog</h1>
@@ -14,4 +14,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default BlogPage
