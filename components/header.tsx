@@ -1,9 +1,14 @@
-import logo from '@/components/assets/header-logo.png'
+import logoImg from '@/components/assets/header-logo.png'
+import Image from 'next/image'
 
 const Header = () => {
   return (
     <header>
-      <img src={logo.src} alt='A server surrounded by magic sparkles.' />
+      <Image
+        src={logoImg}
+        alt='A server surrounded by magic sparkles.'
+        priority
+      />
       <h1>Welcome to this NextJS Course!</h1>
     </header>
   )
