@@ -1,14 +1,24 @@
-import Link from 'next/link'
-import Header from '@/components/header'
+import CardSection from '@/components/card/card-section'
+import Hero from './home/hero'
+import { games, news } from './api/data'
+import GamesList from '@/components/recipes/game-list/game-list'
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <p>🔥 Let&apos;s get started! 🔥</p>
-      <p>
-        <Link href='/about'>About us</Link>
-      </p>
-    </main>
+    <>
+      <Hero />
+      <GamesList
+        list={games}
+        title='Featured Games'
+        reverse={true}
+        preview={true}
+      />
+      <CardSection
+        news={news}
+        title='Latest News'
+        buttonTitle='View all posts'
+        buttonLink='/blog'
+      />
+    </>
   )
 }

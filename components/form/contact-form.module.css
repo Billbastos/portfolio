@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.success-message h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}

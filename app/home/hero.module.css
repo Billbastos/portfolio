@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+  background-color: var(--main-bg-medium-color);
+  padding-bottom: 80px;
+}
+
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.content {
+  text-align: left;
+  width: 960px;
+}

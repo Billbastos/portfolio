@@ -1,14 +1,8 @@
-import Link from 'next/link'
+import { games } from '../api/data'
+import GamesList from '@/components/recipes/game-list/game-list'
 
 const GamesPage = () => {
-  return (
-    <main>
-      <h1>Games</h1>
-      <p>
-        <Link href='/game/first-game'>First Game</Link>
-      </p>
-    </main>
-  )
+  return <GamesList list={games} title='Games' />
 }
 
 export default GamesPage

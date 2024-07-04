@@ -1,0 +1,13 @@
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icons > a {
+  color: #5a5a5a;
+}
+
+.icons > a:hover {
+  color: #8a8a8a;
+}

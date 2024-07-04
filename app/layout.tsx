@@ -1,6 +1,6 @@
 import './globals.css'
-import Footer from '@/components/footer'
-import Navigation from '@/components/navigation'
+import Footer from '@/components/footer/footer'
+import Header from '@/components/header/header'
 
 export const metadata = {
   title: 'NextJS Course App',
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-        <Navigation />
+        <Header />
         {children}
         <Footer />
       </body>

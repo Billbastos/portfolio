@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  background-color: var(--main-bg-medium-color);
+  padding-bottom: 80px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.content {
+  text-align: left;
+  flex: 2;
+}
+
+.avatar {
+  padding-top: 4rem;
+  width: 100%;
+  flex: 1;
+}

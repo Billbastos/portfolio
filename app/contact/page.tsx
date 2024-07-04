@@ -1,9 +1,18 @@
+import CardSection from '@/components/card/card-section'
+import Hero from './hero'
+import { news } from '../api/data'
+
 const ContactPage = () => {
   return (
-    <main>
-      <h1>Contact</h1>
-      <p>Send us a message!</p>
-    </main>
+    <>
+      <Hero />
+      <CardSection
+        news={news}
+        title='Latest News'
+        buttonTitle='View all posts'
+        buttonLink='/blog'
+      />
+    </>
   )
 }
 

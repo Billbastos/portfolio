@@ -1,17 +1,8 @@
-import Link from 'next/link'
+import { posts } from '../api/data'
+import PostList from '@/components/recipes/post-list/post-list'
 
-const BlogPage = () => {
-  return (
-    <main>
-      <h1>Blog</h1>
-      <p>
-        <Link href='/blog/post-1'>Post 1</Link>
-      </p>
-      <p>
-        <Link href='/blog/post-2'>Post 2</Link>
-      </p>
-    </main>
-  )
+const GamesPage = () => {
+  return <PostList list={posts} title='Blog' />
 }
 
-export default BlogPage
+export default GamesPage
