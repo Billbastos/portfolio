@@ -1,20 +1,23 @@
 import CardSection from '@/components/card/card-section'
 import Hero from './home/hero'
-import { games, news } from './api/data'
 import GamesList from '@/components/recipes/game-list/game-list'
+import { getGames, getPosts } from '@/lib/queries'
 
-export default function Home() {
+const Home = async () => {
+  const games = await getGames()
+  const posts = await getPosts()
+
   return (
     <>
       <Hero />
       <GamesList
-        list={games}
+        list={games.slice(0, 3)}
         title='Featured Games'
         reverse={true}
         preview={true}
       />
       <CardSection
-        news={news}
+        cards={posts}
         title='Latest News'
         buttonTitle='View all posts'
         buttonLink='/blog'
@@ -22,3 +25,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home

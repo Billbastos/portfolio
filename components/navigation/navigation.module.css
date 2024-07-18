@@ -50,11 +50,26 @@
   left: 11%;
   width: 80%;
   height: 4px;
-  bottom: -18px;
-  background-color: #5a5a5a;
+  bottom: -10px;
 }
 
 .active > a {
-  color: #2a2a2a;
+  color: var(--text-shaded-color);
   font-weight: 600;
+}
+
+.about.active::after {
+  background-color: var(--about-bg-color-30);
+}
+
+.game.active::after {
+  background-color: var(--game-bg-color-30);
+}
+
+.blog.active::after {
+  background-color: var(--blog-bg-color-30);
+}
+
+.contact.active::after {
+  background-color: var(--contact-bg-color-30);
 }

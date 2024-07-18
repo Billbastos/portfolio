@@ -4,14 +4,21 @@ import Card from './card'
 import Button from '../button/button'
 import { FaArrowRight } from 'react-icons/fa'
 
-const CardSection = ({ news, title, buttonTitle, buttonLink }) => {
+const CardSection = ({
+  cards,
+  title,
+  buttonTitle,
+  buttonLink,
+}) => {
   const { section, link, wrapper } = classes
   return (
-    <div className={wrapper}>
+    <div
+      className={wrapper}
+    >
       <div className={section}>
         <h1>{title}</h1>
-        <CardGroup>
-          {news.map((item) => (
+        <CardGroup size={cards.length}>
+          {cards.map((item) => (
             <Card key={item.id} {...item} />
           ))}
         </CardGroup>

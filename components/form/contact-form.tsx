@@ -7,18 +7,22 @@ import Input from './input'
 import Textarea from './textarea'
 import classes from './contact-form.module.css'
 import Button from '../button/button'
-import { FaChevronRight } from 'react-icons/fa'
+import { sendEmail } from '@/lib/send-email'
+import { useState } from 'react'
 
-type FormValues = {
+export type FormValues = {
   email: string
   name: string
   message: string
 }
 
 const schema = z.object({
-  email: z.string().min(1, { message: 'email required.' }),
-  name: z.string().min(1, { message: 'name required.' }),
-  message: z.string().min(1, { message: 'message required.' }),
+  email: z
+    .string()
+    .min(1, { message: 'Email is required.' })
+    .email({ message: 'Invalid email.' }),
+  name: z.string().min(2, { message: 'Name is required.' }),
+  message: z.string().min(10, { message: 'Message is required.' }),
 })
 
 const ContactForm = () => {
@@ -27,10 +31,14 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors, isSubmitSuccessful },
   } = useForm<FormValues>({ resolver: zodResolver(schema) })
+  const [emailSent, setEmailSent] = useState<{ error?: string }>({})
   const { wrapper, form, 'success-message': successMessage } = classes
-  const onSubmit = handleSubmit((data) => {
-    console.log(data)
+
+  const onSubmit = handleSubmit(async (data) => {
+    const result = await sendEmail(data)
+    setEmailSent(result)
   })
+
   return (
     <div className={wrapper}>
       {!isSubmitSuccessful ? (
@@ -63,8 +71,17 @@ const ContactForm = () => {
         </form>
       ) : (
         <div className={successMessage}>
-          <h2>Thank you for your message!</h2>
-          <p>We will get back to you as soon as possible.</p>
+          {emailSent && emailSent.error ? (
+            <>
+              <h2>There was an error sending your message.</h2>
+              <p>Please try again later.</p>
+            </>
+          ) : (
+            <>
+              <h2>Thank you for your message!</h2>
+              <p>We will get back to you as soon as possible.</p>
+            </>
+          )}
         </div>
       )}
     </div>

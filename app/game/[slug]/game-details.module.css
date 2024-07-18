@@ -1,3 +1,22 @@
 .wrapper {
-  padding-bottom: 80px;
+  text-align: left;
+  padding: 80px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper h1:first-child {
+  margin-top: 0;
+}
+
+.image {
+  position: relative;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 640px;
+  padding: 40px;
+  margin: 0 auto;
+  box-shadow: 0 1.5rem 3.5rem rgba(13, 21, 55, 0.1);
 }

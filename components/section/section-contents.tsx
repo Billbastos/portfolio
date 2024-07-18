@@ -21,9 +21,12 @@ const SectionContents = ({
     >
       <picture>
         <Image
-          src={image}
+          src={image.src}
           alt={title}
           style={{ objectFit: 'cover' }}
+          width={image.width}
+          height={image.height}
+          priority
           {...rest}
         />
       </picture>

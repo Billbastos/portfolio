@@ -1,26 +1,11 @@
-.cta a {
-  background-color: #5a5a5a;
-  color: #ffffff;
-  font-size: 1.25rem;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 3px;
-}
-
 .link a {
   position: relative;
-  color: #5a5a5a;
+  color: var(--link-color);
   text-decoration: none;
   padding: 0.5rem;
 }
 
 .link a:hover,
 .link a:active {
-  color: #2a2a2a;
-}
-
-.cta a:hover,
-.cta a:active {
-  background-color: #2a2a2a;
+  color: var(--link-color-20);
 }

@@ -23,7 +23,7 @@ export interface GameDetailsPageProps {
 }
 
 const ICON_SIZE = 20
-const ICON_COLOR = '#7f7d7c'
+const ICON_COLOR = `var(--palette-grey-30)`
 
 const iconProps = {
   size: ICON_SIZE,
@@ -59,28 +59,28 @@ const Hero: FC<GameDetailsPageProps> = ({
               <div>
                 <FaCode {...iconProps} />
                 <strong>Programming Languages:</strong>
-                <div>{programmingLanguages.join(', ')}</div>
+                <div>{programmingLanguages}</div>
               </div>
             </li>
             <li>
               <div>
                 <FaDev {...iconProps} />
                 <strong>Platforms:</strong>
-                <div>{platforms.join(', ')}</div>
+                <div>{platforms}</div>
               </div>
             </li>
             <li>
               <div>
                 <FaIcons {...iconProps} />
                 <strong>Genres:</strong>
-                <div>{genres.join(', ')}</div>
+                <div>{genres}</div>
               </div>
             </li>
             <li>
               <div>
                 <FaHandSparkles {...iconProps} />
                 <strong>Contributions:</strong>
-                <div>{contributions.join(', ')}</div>
+                <div>{contributions}</div>
               </div>
             </li>
             <li>
@@ -102,9 +102,11 @@ const Hero: FC<GameDetailsPageProps> = ({
           <section className={section}>
             <picture>
               <Image
-                src={image}
+                src={image.src}
                 alt={title}
                 className={heroImage}
+                width={image.width}
+                height={image.height}
                 style={{
                   objectFit: 'cover',
                 }}

@@ -10,14 +10,16 @@ interface LinkProps
   href?: string
   as?: 'button' | 'a'
   reverse?: boolean
+  animate?: boolean
 }
 const Button: FC<PropsWithChildren<LinkProps>> = ({
   children,
   variant,
   as = 'button',
   href = '#',
-  className = {},
+  className = '',
   reverse = false,
+  animate = false,
   ...rest
 }) => {
   const {
@@ -27,8 +29,10 @@ const Button: FC<PropsWithChildren<LinkProps>> = ({
     link,
     wrapper,
     'animate-back': animateBack,
+    animate: animateClass,
   } = classes
-  let btnStyle = button
+  let addAnimation = animate ? reverse ? animateBack : animateClass : ''
+  let btnStyle = `${button} ${addAnimation}`
 
   btnStyle = variant === 'primary' ? `${btnStyle} ${primary}` : btnStyle
   btnStyle = variant === 'secondary' ? `${btnStyle} ${secondary}` : btnStyle
@@ -41,7 +45,7 @@ const Button: FC<PropsWithChildren<LinkProps>> = ({
     </button>
   ) : (
     <Link href={href} className={btnStyle}>
-      <div className={`${wrapper}  ${className}`} {...rest}>
+      <div className={`${wrapper} ${className}`} {...rest}>
         {children}
       </div>
     </Link>

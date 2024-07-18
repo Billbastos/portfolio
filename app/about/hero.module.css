@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
-  background-color: var(--main-bg-medium-color);
+  background: var(--about-bg-color);
+  background: linear-gradient(0deg, var(--about-bg-color) 0%, var(--about-bg-color-50) 100%);
   padding-bottom: 80px;
 }
 
@@ -17,6 +18,7 @@
 .content {
   text-align: left;
   flex: 2;
+  color: #ffffff;
 }
 
 .avatar {

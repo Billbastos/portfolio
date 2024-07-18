@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--main-bg-medium-color);
+  background: var(--blog-bg-color);
+  background: linear-gradient(0deg, var(--blog-bg-color) 0%, var(--blog-bg-color-50) 100%);
+  color: #ffffff;
+  min-height: 498px;
 }
 
 .hero {
@@ -10,22 +13,29 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 0 80px 120px;
+  color: currentColor;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   align-items: flex-start;
-  padding: 80px 0 0 40px;
+}
+
+.title {
+  margin-bottom: 0;
+  color: currentColor;
 }
 
 .content {
   text-align: left;
   flex: 1;
+  padding: 0 40px;
+  color: currentColor;
 }
 
-.avatar {
+.image-wrapper {
   width: 100%;
   flex: 1;
 }
@@ -38,7 +48,6 @@
   box-shadow: 0 1.8rem 3.8rem rgba(13, 21, 55, 0.3);
   transition: all 0.3s;
   position: relative;
-  background-color: rgba(13, 21, 55, 0.3);
 }
 
 .hero-image {
@@ -46,19 +55,26 @@
   transform: scale(2.5);
   left: 0;
   top: 0;
-  filter: blur(1px) grayscale(0.6) contrast(0.8);
+  opacity: 0.8;
+  filter: blur(1px) grayscale(0.4);
 }
 
 .items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 40px;
   list-style: none;
+  padding-left: 0;
 }
 
 .items li {
   padding-top: 10px;
+  color: currentColor;
+}
+
+.items ul {
+  list-style: none;
+  padding-inline-start: 20px;
 }
 
 .items li div {
@@ -74,5 +90,46 @@
 .items li strong {
   display: block;
   font-size: larger;
-  color: #7f7d7c;
+  color: currentColor;
+}
+
+.date {
+  color: currentColor;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 200;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+}
+
+.meta-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.author {
+  display: flex;
+  gap: 20px;
+  color: currentColor;
+  margin: 0 auto;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.and {
+  font-family: 'Poppins', sans-serif;
+  color: currentColor;
+  font-size: large;
+  font-weight: 700;
+  padding-left: 15px;
 }

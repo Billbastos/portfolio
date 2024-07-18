@@ -26,7 +26,8 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "initdb.ts"
+    "initdb.ts",
+    "app/pages/404.js"
   ],
   "exclude": ["node_modules"]
 }

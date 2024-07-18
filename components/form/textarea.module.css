@@ -5,8 +5,8 @@
 
 .field {
   background-color: #ffffff;
-  border: 1px solid var(--border-medium-color);
-  padding: 0.6rem;
+  border: 1px solid var(--text-shaded-color-30);
+  padding: 1rem;
   border-radius: 5px;
   font-weight: 100;
 }

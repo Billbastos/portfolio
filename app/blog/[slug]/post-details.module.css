@@ -1,0 +1,10 @@
+.wrapper {
+  text-align: left;
+  padding: 80px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper h1:first-child {
+  margin-top: 0;
+}

@@ -8,9 +8,6 @@ const Footer = () => {
   return (
     <footer className={footer}>
       <div>
-        <Link href='/'>
-          <h2>Gui Bastos</h2>
-        </Link>
         <ul>
           <li>
             <Link href='/about'>About</Link>

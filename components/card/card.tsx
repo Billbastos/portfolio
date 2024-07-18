@@ -9,20 +9,20 @@ interface CardProps {
   image: string
   title: string
   description: string
-  link: string
+  url: string
 }
 
 const Card: FC<CardProps> = ({
   image: cardImage,
   title: cardTitle,
   description: cardContent,
-  link,
+  url,
 }) => {
   const { item, image, 'image-wrapper': imageWrapper, title, content } = classes
   const router = useRouter()
 
   return (
-    <article className={item} onClick={() => router.push(link)}>
+    <article className={item} onClick={() => router.push(url)}>
       <div className={imageWrapper}>
         <Image
           src={cardImage}

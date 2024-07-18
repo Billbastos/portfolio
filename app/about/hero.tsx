@@ -1,6 +1,6 @@
 import Avatar from '@/components/avatar/avatar'
 import classes from './hero.module.css'
-import avatarImg from './assets/gui-2.png'
+import avatarGif from './assets/gui-about-animation.gif'
 
 const Hero = () => {
   const { hero, content, avatar, wrapper } = classes
@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
         <div className={avatar}>
-          <Avatar src={avatarImg} />
+          <Avatar src={avatarGif} />
         </div>
       </div>
     </div>

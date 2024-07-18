@@ -1,0 +1,19 @@
+.code {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #f3f4f6;
+  overflow-x: auto;
+}
+
+.token-line {
+  display: flex;
+  gap: 1rem;
+}
+
+.line-number {
+  border-right: 1px solid var(--blog-bg-color-30);
+  padding-right: 10px;
+  color: var(--blog-bg-color-30);
+}

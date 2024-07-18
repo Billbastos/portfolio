@@ -1,9 +1,10 @@
 import CardSection from '@/components/card/card-section'
 import Hero from './hero'
 import classes from './about.module.css'
-import { news } from '../api/data'
+import { getPosts } from '@/lib/queries'
 
-const AboutPage = () => {
+const AboutPage = async () => {
+  const posts = await getPosts()
   const { wrapper } = classes
   return (
     <>
@@ -47,7 +48,7 @@ const AboutPage = () => {
         </section>
       </main>
       <CardSection
-        news={news}
+        cards={posts}
         title='Latest News'
         buttonTitle='View all posts'
         buttonLink='/blog'

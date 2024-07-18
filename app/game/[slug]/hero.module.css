@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--main-bg-medium-color);
+  background: var(--game-bg-color);
+  background: linear-gradient(0deg, var(--game-bg-color) 0%, var(--game-bg-color-50) 100%);
+  min-height: 498px;
 }
 
 .hero {
@@ -37,15 +39,15 @@
   box-shadow: 0 1.8rem 3.8rem rgba(13, 21, 55, 0.3);
   transition: all 0.3s;
   position: relative;
-  background-color: rgba(13, 21, 55, 0.3);
 }
 
 .hero-image {
   position: absolute;
-  transform: scale(2.5);
-  left: 0;
-  top: 0;
-  filter: blur(1px) grayscale(0.6) contrast(0.8);
+  transform: scale(1.5) translateY(-25%);
+  left: 120px;
+  top: 120px;
+  opacity: 0.8;
+  filter: blur(1px) grayscale(0.4);
 }
 
 .items {
@@ -73,5 +75,5 @@
 .items li strong {
   display: block;
   font-size: larger;
-  color: #7f7d7c;
+  color: var(--palette-grey-30);
 }

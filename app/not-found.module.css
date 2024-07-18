@@ -1,0 +1,105 @@
+.wrapper {
+  font-family: 'Pixelify Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.return-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--palette-game);
+}
+
+.link:hover {
+  color: var(--palette-game-darker);
+}
+
+.cat {
+  position: absolute;
+  z-index: 1;
+  top: 180px;
+  left: 0px;
+  color: var(--palette-about-lighter);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: cat;
+}
+
+.door {
+  color: var(--palette-game-darker);
+}
+
+.icons {
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: fade;
+}
+
+.tip {
+  text-align: center;
+  color: var(--text-shaded-color);
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-name: fall;
+}
+
+.tip h1 {
+  margin: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 5rem;
+}
+
+.tip h2 {
+  font-family: 'Pixelify Sans', sans-serif;
+  margin: 0 auto 40px;
+  font-size: 3.5rem;
+}
+
+@keyframes cat {
+  0% {
+    transform: translateX(200px);
+  }
+  5% {
+    transform: translateX(200px) rotateY(180deg);
+  }
+  50% {
+    transform: translateX(0px) rotateY(180deg);
+  }
+  55% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: translateX(200px) rotateY(0);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

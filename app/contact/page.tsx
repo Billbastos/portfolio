@@ -1,13 +1,14 @@
 import CardSection from '@/components/card/card-section'
 import Hero from './hero'
-import { news } from '../api/data'
+import { getPosts } from '@/lib/queries'
 
-const ContactPage = () => {
+const ContactPage = async () => {
+  const posts = await getPosts()
   return (
     <>
       <Hero />
       <CardSection
-        news={news}
+        cards={posts}
         title='Latest News'
         buttonTitle='View all posts'
         buttonLink='/blog'

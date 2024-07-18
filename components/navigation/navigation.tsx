@@ -4,7 +4,15 @@ import Link from '../link/link'
 import classes from './navigation.module.css'
 
 const Navigation = () => {
-  const { 'nav-items': navItems, nav, active } = classes
+  const {
+    'nav-items': navItems,
+    nav,
+    active,
+    about,
+    game,
+    blog,
+    contact,
+  } = classes
   const pathname = usePathname()
 
   return (
@@ -14,13 +22,16 @@ const Navigation = () => {
       </h2>
       <ul className={navItems}>
         <li>
-          <Link className={`${pathname === '/about' && active}`} href='/about'>
+          <Link
+            className={`${about} ${pathname === '/about' && active}`}
+            href='/about'
+          >
             About
           </Link>
         </li>
         <li>
           <Link
-            className={`${pathname.includes('/game') && active}`}
+            className={`${game} ${pathname.includes('/game') && active}`}
             href='/game'
           >
             Games
@@ -28,7 +39,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link
-            className={`${pathname.includes('/blog') && active}`}
+            className={`${blog} ${pathname.includes('/blog') && active}`}
             href='/blog'
           >
             Blog
@@ -36,7 +47,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link
-            className={`${pathname === '/contact' && active}`}
+            className={`${contact} ${pathname === '/contact' && active}`}
             href='/contact'
           >
             Contact

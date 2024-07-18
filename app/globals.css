@@ -1,12 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 :root {
-  --main-bg-light-color: #f9f9f9;
-  --main-bg-medium-color: #f6f6f6;
-  --border-medium-color: #cacdd8;
   --border-medium-error-color: #d63d07;
   --text-error-color: #e53e3e;
-  --text-shaded-color: #626262;
+
+  --text-shaded-color: hsl(201, 25%, 13%);
+  --text-shaded-color-10: hsl(201, 25%, 18%);
+  --text-shaded-color-20: hsl(201, 25%, 23%);
+  --text-shaded-color-30: hsl(201, 25%, 28%);
+  --text-shaded-color-40: hsl(201, 25%, 33%);
+  --text-shaded-color-50: hsl(201, 25%, 38%);
+  --text-shaded-color-60: hsl(201, 25%, 43%);
+  --text-shaded-color-70: hsl(201, 25%, 48%);
+  --text-shaded-color-80: hsl(201, 25%, 53%);
+  --text-shaded-color-90: hsl(201, 25%, 58%);
+  --text-shaded-color-100: hsl(201, 25%, 63%);
+
+  --link-color: var(--text-shaded-color);
+  --link-color-10: var(--text-shaded-color-10);
+  --link-color-20: var(--text-shaded-color-20);
+  --link-color-30: var(--text-shaded-color-30);
+  --link-color-40: hsl(201, 25%, 32%);
+  --link-color-50: hsl(201, 25%, 39%);
+  --link-color-60: hsl(201, 25%, 46%);
+  --link-color-70: hsl(201, 25%, 53%);
+  --link-color-80: hsl(201, 25%, 60%);
+  --link-color-90: hsl(201, 25%, 67%);
+  --link-color-100: hsl(201, 25%, 74%);
+  --link-color-110: hsl(201, 25%, 81%);
+  --link-color-120: hsl(201, 25%, 88%);
+
+  --blog-bg-color: hsl(177, 83%, 26%);
+  --blog-bg-color-10: hsl(177, 83%, 30%);
+  --blog-bg-color-20: hsl(177, 83%, 34%);
+  --blog-bg-color-30: hsl(177, 83%, 38%);
+  --blog-bg-color-40: hsl(177, 83%, 42%);
+  --blog-bg-color-50: hsl(177, 83%, 46%);
+  --blog-bg-color-60: hsl(177, 83%, 50%);
+  --blog-bg-color-70: hsl(177, 83%, 54%);
+  --blog-bg-color-80: hsl(177, 83%, 58%);
+  --blog-bg-color-90: hsl(177, 83%, 62%);
+  --blog-bg-color-100: hsl(177, 83%, 66%);
+  --blog-bg-color-110: hsl(177, 83%, 70%);
+
+  --game-bg-color: hsl(49, 98%, 50%);
+  --game-bg-color-10: hsl(49, 98%, 54%);
+  --game-bg-color-20: hsl(49, 98%, 58%);
+  --game-bg-color-30: hsl(49, 98%, 62%);
+  --game-bg-color-40: hsl(49, 98%, 66%);
+  --game-bg-color-50: hsl(49, 98%, 70%);
+  --game-bg-color-60: hsl(49, 98%, 74%);
+  --game-bg-color-70: hsl(49, 98%, 78%);
+  --game-bg-color-80: hsl(49, 98%, 82%);
+  --game-bg-color-90: hsl(49, 98%, 86%);
+  --game-bg-color-100: hsl(49, 98%, 90%);
+  --game-bg-color-110: hsl(49, 98%, 94%);
+
+  --about-bg-color: hsl(21, 100%, 44%);
+  --about-bg-color-10: hsl(21, 100%, 49%);
+  --about-bg-color-20: hsl(21, 100%, 54%);
+  --about-bg-color-30: hsl(21, 100%, 59%);
+  --about-bg-color-40: hsl(21, 100%, 63%);
+  --about-bg-color-50: hsl(21, 100%, 67%);
+  --about-bg-color-60: hsl(21, 100%, 71%);
+  --about-bg-color-70: hsl(21, 100%, 75%);
+  --about-bg-color-80: hsl(21, 100%, 79%);
+  --about-bg-color-90: hsl(21, 100%, 83%);
+  --about-bg-color-100: hsl(21, 100%, 87%);
+  --about-bg-color-110:  hsl(21, 100%, 91%);
+
+  --contact-bg-color: hsl(286, 54%, 33%);
+  --contact-bg-color-10: hsl(286, 54%, 37%);
+  --contact-bg-color-20: hsl(286, 54%, 41%);
+  --contact-bg-color-30: hsl(286, 54%, 45%);
+  --contact-bg-color-40: hsl(286, 54%, 49%);
+  --contact-bg-color-50: hsl(286, 54%, 53%);
+  --contact-bg-color-60: hsl(286, 54%, 57%);
+  --contact-bg-color-70: hsl(286, 54%, 61%);
+  --contact-bg-color-80: hsl(286, 54%, 65%);
+  --contact-bg-color-90: hsl(286, 54%, 69%);
+
+  --palette-grey: hsl(197, 10%, 25%);
+  --palette-grey-10: hsl(197, 10%, 29%);
+  --palette-grey-20: hsl(197, 10%, 33%);
+  --palette-grey-30: hsl(197, 10%, 37%);
+  --palette-grey-40: hsl(197, 10%, 41%);
+  --palette-grey-50: hsl(197, 10%, 45%);
+  --palette-grey-60: hsl(197, 10%, 49%);
+  --palette-grey-70: hsl(197, 10%, 53%);
+  --palette-grey-80: hsl(197, 10%, 57%);
+  --palette-grey-90: hsl(197, 10%, 61%);
+  --palette-grey-100: hsl(197, 10%, 65%);
+  --palette-grey-110: hsl(197, 10%, 69%);
+  --palette-grey-120: hsl(197, 10%, 73%);
+
+  --background-grey: hsl(180, 10%, 98%);
+  --background-grey-darker: hsl(180, 10%, 90%);
+
+  --footer-text-lighter-color: var(--text-shaded-color-100);
+  --footer-text-color: var(--text-shaded-color-80);
+  --footer-bg-darker-color: var(--text-shaded-color);
+  --footer-bg-lighter-color: var(--footer-text-lighter-color);
+
 }
 
 * {
@@ -45,12 +141,12 @@ section p {
 
 h1 {
   font-size: 3rem;
-  margin: 3rem auto;
+  margin: 3rem auto 1rem;
 }
 
 h2 {
   font-size: 2rem;
-  margin: 2rem auto;
+  margin: 2rem auto 1rem;
   font-weight: 400;
   letter-spacing: -1px;
 }
