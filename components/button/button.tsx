@@ -11,6 +11,7 @@ interface LinkProps
   as?: 'button' | 'a'
   reverse?: boolean
   animate?: boolean
+  mono?: boolean
 }
 const Button: FC<PropsWithChildren<LinkProps>> = ({
   children,
@@ -20,6 +21,7 @@ const Button: FC<PropsWithChildren<LinkProps>> = ({
   className = '',
   reverse = false,
   animate = false,
+  mono = false,
   ...rest
 }) => {
   const {
@@ -30,6 +32,7 @@ const Button: FC<PropsWithChildren<LinkProps>> = ({
     wrapper,
     'animate-back': animateBack,
     animate: animateClass,
+    monochromatic
   } = classes
   let addAnimation = animate ? reverse ? animateBack : animateClass : ''
   let btnStyle = `${button} ${addAnimation}`
@@ -37,7 +40,7 @@ const Button: FC<PropsWithChildren<LinkProps>> = ({
   btnStyle = variant === 'primary' ? `${btnStyle} ${primary}` : btnStyle
   btnStyle = variant === 'secondary' ? `${btnStyle} ${secondary}` : btnStyle
   btnStyle = variant === 'link' ? `${btnStyle} ${link}` : btnStyle
-  btnStyle = reverse ? `${btnStyle} ${animateBack}` : btnStyle
+  btnStyle = mono ? `${btnStyle} ${monochromatic}` : btnStyle
 
   return as === 'button' ? (
     <button className={`${btnStyle} ${className}`} {...rest}>

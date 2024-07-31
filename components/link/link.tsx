@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 import { FC, HTMLProps } from 'react'
 import classes from './link.module.css'
 
-const Link: FC<HTMLProps<HTMLAnchorElement> & LinkBaseProps> = ({
+const Link: FC<HTMLProps<HTMLAnchorElement>> = ({
   href,
   children,
   ...rest

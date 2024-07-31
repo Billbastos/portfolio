@@ -8,6 +8,23 @@ import { isCode } from 'datocms-structured-text-utils'
 import CodeHighlight from '@/components/structured-text/code/code-highlight'
 import { notFound } from 'next/navigation'
 
+export async function generateMetadata({ params }) {
+  const posts = await getPosts()
+  const post = posts.find((game) => game.slug === params.slug)
+  
+  if (!post) {
+    notFound()
+  }
+  
+  const { title, description, image } = post
+
+  return {
+    title,
+    description,
+    image: image.src,
+  }
+}
+
 const PostDetailsPage = async ({ params }) => {
   const games = await getGames()
   const posts = await getPosts()

@@ -49,31 +49,31 @@ const Hero: FC<GameDetailsPageProps> = ({
   } = classes
   return (
     <div className={wrapper}>
-      <h1 className={titleClass}>{title}</h1>
-      <div className={author}>
-        {authors.map((author: any, index) => {
-          return (
-            <div key={author.name} className={avatar}>
-              {index === 0 && <span className={and}>By </span>}
-              <Avatar size='2.5rem' src={author.avatar.url} />
-              <div style={{ flexGrow: 1 }}>{author.name} </div>
-              {index < authors.length - 2 && <span>,</span>}
-              {index === authors.length - 2 && <span className={and}> & </span>}
-            </div>
-          )
-        })}
-      </div>
-      <div className={date}>
-        <FaCalendarDay size='0.8rem' className='fa-thin' />
-        <div>Posted on {dateCreated}</div>
-      </div>
       <div className={hero}>
         <div className={content}>
+          <h1 className={titleClass}>{title}</h1>
+          <div className={author}>
+            {authors.map((author: any, index) => {
+              return (
+                <div key={author.name} className={avatar}>
+                  <Avatar size='2.5rem' src={author.avatar.url} />
+                  <div style={{ flexGrow: 1 }}>{author.name} </div>
+                  {index < authors.length - 1 && <span>,</span>}
+               
+                </div>
+              )
+            })}
+          </div>
+          <div className={date}>
+            <div>Posted on {dateCreated}</div>
+          </div>
           <div className={metaData}>
             {categories && (
               <div>
                 {categories.map((category: any) => (
-                  <Tag key={category} color="#ffffff">{category.title}</Tag>
+                  <Tag key={category} color='#ffffff'>
+                    {category.title}
+                  </Tag>
                 ))}
               </div>
             )}
@@ -94,7 +94,7 @@ const Hero: FC<GameDetailsPageProps> = ({
           </ul>
           <div className={heading}>
             <p>{description}</p>
-            <Button as='a' variant='secondary' href='/blog' reverse>
+            <Button as='a' variant='link' href='/blog' reverse animate mono>
               <FaArrowLeft />
               Back to Blog
             </Button>

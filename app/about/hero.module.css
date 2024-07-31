@@ -15,6 +15,10 @@
   padding: 0 80px;
 }
 
+.hero p {
+  font-weight: 200;
+}
+
 .content {
   text-align: left;
   flex: 2;

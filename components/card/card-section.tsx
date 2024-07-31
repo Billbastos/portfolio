@@ -23,7 +23,7 @@ const CardSection = ({
           ))}
         </CardGroup>
       </div>
-      <Button variant='link' href={buttonLink} className={link} as='a'>
+      <Button variant='link' href={buttonLink} className={link} as='a' animate>
         {buttonTitle} <FaArrowRight />
       </Button>
     </div>
