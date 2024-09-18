@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   background: var(--game-bg-color);
-  background: linear-gradient(0deg, var(--game-bg-color) 0%, var(--game-bg-color-50) 100%);
+  background: linear-gradient(0deg, var(--game-bg-color) 0%, var(--game-bg-color-30) 100%);
 }
 
 .hero {
@@ -56,7 +56,7 @@
 }
 
 .items li {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .items li div {
@@ -71,5 +71,5 @@
 
 .items li strong {
   display: block;
-  color: var(--palette-grey-20);
+  color: var(--text-color);
 }

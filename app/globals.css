@@ -4,7 +4,8 @@
 :root {
   --border-medium-error-color: #d63d07;
   --text-error-color: #e53e3e;
-
+  --text-color: #000;
+/* 
   --text-shaded-color: hsl(201, 25%, 13%);
   --text-shaded-color-10: hsl(201, 25%, 18%);
   --text-shaded-color-20: hsl(201, 25%, 23%);
@@ -29,7 +30,35 @@
   --link-color-90: hsl(201, 25%, 67%);
   --link-color-100: hsl(201, 25%, 74%);
   --link-color-110: hsl(201, 25%, 81%);
-  --link-color-120: hsl(201, 25%, 88%);
+  --link-color-120: hsl(201, 25%, 88%); */
+
+
+  --text-shaded-color: hsl(286, 54%, 33%);
+  --text-shaded-color-10: hsl(286, 54%, 37%);
+  --text-shaded-color-20: hsl(286, 54%, 41%);
+  --text-shaded-color-30: hsl(286, 54%, 45%);
+  --text-shaded-color-40: hsl(286, 54%, 49%);
+  --text-shaded-color-50: hsl(286, 54%, 53%);
+  --text-shaded-color-60: hsl(286, 54%, 57%);
+  --text-shaded-color-70: hsl(286, 54%, 61%);
+  --text-shaded-color-80: hsl(286, 54%, 65%);
+  --text-shaded-color-90: hsl(286, 54%, 69%);
+  --text-shaded-color-100: hsl(286, 54%, 73%);
+
+
+  --link-color: #000;
+  --link-color-10: hsl(0, 0%, 8%);
+  --link-color-20: var(--link-color-10);
+  --link-color-30: var(--link-color-10);
+  --link-color-40: var(--link-color-10);
+  --link-color-50: hsl(0, 0%, 16%);
+  --link-color-60: hsl(0, 0%, 24%);
+  --link-color-70:  hsl(0, 0%, 32%);
+  --link-color-80: hsl(0, 0%, 40%);
+  --link-color-90:  hsl(0, 0%, 48%);
+  --link-color-100: hsl(0, 0%, 56%);
+  --link-color-110: hsl(0, 0%, 64%);
+  --link-color-120: hsl(0, 0%, 72%);
 
   --blog-bg-color: hsl(177, 83%, 26%);
   --blog-bg-color-10: hsl(177, 83%, 30%);
@@ -44,13 +73,13 @@
   --blog-bg-color-100: hsl(177, 83%, 66%);
   --blog-bg-color-110: hsl(177, 83%, 70%);
 
-  --game-bg-color: hsl(49, 98%, 50%);
-  --game-bg-color-10: hsl(49, 98%, 54%);
-  --game-bg-color-20: hsl(49, 98%, 58%);
-  --game-bg-color-30: hsl(49, 98%, 62%);
-  --game-bg-color-40: hsl(49, 98%, 66%);
-  --game-bg-color-50: hsl(49, 98%, 70%);
-  --game-bg-color-60: hsl(49, 98%, 74%);
+  --game-bg-color: hsl(43, 98%, 47%);
+  --game-bg-color-10: hsl(43, 98%, 54%);
+  --game-bg-color-20: hsl(44, 98%, 58%);
+  --game-bg-color-30: hsl(45, 98%, 62%);
+  --game-bg-color-40: hsl(46, 98%, 66%);
+  --game-bg-color-50: hsl(47, 98%, 70%);
+  --game-bg-color-60: hsl(48, 98%, 74%);
   --game-bg-color-70: hsl(49, 98%, 78%);
   --game-bg-color-80: hsl(49, 98%, 82%);
   --game-bg-color-90: hsl(49, 98%, 86%);

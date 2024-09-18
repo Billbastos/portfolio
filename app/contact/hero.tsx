@@ -7,9 +7,9 @@ const Hero = () => {
   const { hero, content, avatar, wrapper } = classes
   return (
     <div className={wrapper}>
-      <h1>Contact</h1>
       <div className={hero}>
         <div className={content}>
+          <h1>Contact</h1>
           <ContactForm />
         </div>
         <div className={avatar}>

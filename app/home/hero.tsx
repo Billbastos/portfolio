@@ -1,6 +1,4 @@
-import Avatar from '@/components/avatar/avatar'
 import classes from './hero.module.css'
-import avatarImg from './assets/gui.png'
 
 const Hero = () => {
   const { hero, content, wrapper } = classes
@@ -10,17 +8,15 @@ const Hero = () => {
         <div className={content}>
           <h1>Bio</h1>
           <p>
-            I'm an independent gameplay and tools engineering contractor,
-            currently based in Edinburgh, UK. I work with a wide variety of
-            clients, from individuals looking for someone to build their dream
-            game to independent studios and startups that need a talented
-            professional to help to develop their projects. I graduated from
-            Mackenzie: Industrial Design, and have commercial AAA programming
-            experience working as an Online Tools Designer at Segment. As an
-            independent contractor, I take a lot of joy in being able to
-            continually work on a variety of different projects as it forces me
-            to interact with new technologies, work with new people and
-            consistently allow me to keep growing and learning...
+            Result-driven Senior Software Engineer with over 10 years of
+            extensive experience in software development and building robust
+            solutions across a variety of platforms and industries. Adept at
+            leading projects from conception to deployment, utilizing a vast
+            array of programming tools and a track record of integrating
+            user-centric design and backend functionalities. Passionate about
+            leveraging innovative technologies to drive business growth, enhance
+            user experience, and streamline operations in fast-paced, agile
+            environments.
           </p>
         </div>
       </div>

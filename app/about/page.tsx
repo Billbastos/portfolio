@@ -13,17 +13,20 @@ const AboutPage = async () => {
         <section>
           <h2>Experiences</h2>
           <p>
-            I'm an independent gameplay and tools engineering contractor,
-            currently based in Edinburgh, UK. I work with a wide variety of
-            clients, from individuals looking for someone to build their dream
-            game to independent studios and startups that need a talented
-            professional to help to develop their projects. I graduated from
-            Mackenzie: Industrial Design, and have commercial AAA programming
-            experience working as an Online Tools Designer at Segment. As an
-            independent contractor, I take a lot of joy in being able to
-            continually work on a variety of different projects as it forces me
-            to interact with new technologies, work with new people and
-            consistently allow me to keep growing and learning...
+            Over the years, I've had the chance to work on some pretty exciting
+            projects. At Twilio/Segment, I led the charge on speeding up website
+            development with a slick design system, built reusable React/NextJS
+            components, and rolled out a consent management solution to keep
+            things GDPR/CCPA-compliant. I even boosted user signups by over 300%
+            with a killer marketing page! Before that, at Global Relay, I
+            developed a web messaging app, setting up React components and
+            automating workflows, saving tons of time. At Central 1, I
+            spearheaded key projects like Vancity's Visa Alerts and enhanced
+            online banking solutions. Going further back, at Unimed do Brasil, I
+            revamped a nationwide appointment system and led UX redesign
+            efforts, making the platform much more efficient and user-friendly.
+            Now, I’m stoked to dive headfirst into game development and see
+            where this new chapter takes me!
           </p>
         </section>
         <section>

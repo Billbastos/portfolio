@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   background: var(--blog-bg-color);
-  background: linear-gradient(0deg, var(--blog-bg-color) 0%, var(--blog-bg-color-50) 100%);
+  background: linear-gradient(0deg, var(--blog-bg-color) 0%, var(--blog-bg-color-30) 100%);
   color: #ffffff;
 }
 
@@ -124,12 +124,4 @@
   gap: 5px;
   align-items: center;
   padding: 5px 0;
-}
-
-.and {
-  font-family: 'Poppins', sans-serif;
-  color: currentColor;
-  font-size: large;
-  font-weight: 700;
-  padding-left: 15px;
 }

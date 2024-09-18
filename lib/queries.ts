@@ -1,4 +1,3 @@
-import { table } from 'console'
 import apolloClient from './apollo-client'
 import { gql } from '@apollo/client'
 
@@ -132,8 +131,6 @@ export const getPosts = async () => {
     authors: blog.author,
     tableOfContents: ['Table of Contents'],
   }))
-
-  console.log(posts)
 
   return posts
 }

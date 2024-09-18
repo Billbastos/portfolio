@@ -3,10 +3,6 @@
   padding-bottom: 80px;
 }
 
-.wrapper h1 {
-  text-align: center;
-}
-
 .hero {
   display: flex;
   align-items: center;
