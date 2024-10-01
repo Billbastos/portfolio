@@ -5,9 +5,18 @@ const token = process.env.DATO_TOKEN
 
 const httpLink = createHttpLink({
   uri: 'https://graphql.datocms.com/',
-  headers: {
-    Authorization: `Bearer ${token}`,
-  },
+  fetch: function (uri, options) {
+    return fetch(uri, {
+      ...options ?? {},
+      headers: {
+        ...options?.headers ?? {},
+        Authorization: `Bearer ${token}`
+      },
+      next: {
+        revalidate: 0
+      }
+    })
+  }
 })
 
 const authLink = setContext((_, { headers }) => {
