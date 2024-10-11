@@ -42,18 +42,29 @@ const Twitter = (props) => (
 const Social = () => {
   const { icons } = classes
   return (
-    <div className={icons}>
+    <div className={icons} data-testid='social-component'>
       <a
         href='https://linkedin.com/in/guibastos'
         target='_blank'
         rel='noreferrer'
+        title='linkedin'
       >
         <Linkedin />
       </a>
-      <a href='https://x.com/guigasbastos' target='_blank' rel='noreferrer'>
+      <a
+        href='https://x.com/guigasbastos'
+        target='_blank'
+        rel='noreferrer'
+        title='twitter'
+      >
         <Twitter />
       </a>
-      <a href='https://github.com/Billbastos' target='_blank' rel='noreferrer'>
+      <a
+        href='https://github.com/Billbastos'
+        target='_blank'
+        rel='noreferrer'
+        title='github'
+      >
         <Github />
       </a>
     </div>
