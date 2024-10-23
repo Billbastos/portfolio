@@ -1,7 +1,11 @@
 .wrapper {
   width: 100%;
   background: var(--about-bg-color);
-  background: linear-gradient(0deg, var(--about-bg-color) 0%, var(--about-bg-color-50) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--about-bg-color) 0%,
+    var(--about-bg-color-50) 100%
+  );
   padding-bottom: 80px;
 }
 
@@ -10,9 +14,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 6rem;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 80px;
+  max-width: 100rem;
+  padding: 3rem 6rem;
 }
 
 .content {

@@ -3,7 +3,11 @@
   flex-direction: column;
   width: 100%;
   background: var(--blog-bg-color);
-  background: linear-gradient(0deg, var(--blog-bg-color) 0%, var(--blog-bg-color-30) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--blog-bg-color) 0%,
+    var(--blog-bg-color-30) 100%
+  );
   color: #ffffff;
 }
 
@@ -11,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 0 80px 120px;
+  padding: 3rem 0 3rem 6rem;
   color: currentColor;
 }
 
@@ -34,7 +38,6 @@
 .content {
   text-align: left;
   flex: 1;
-  padding: 0 40px;
   color: currentColor;
 }
 
@@ -57,40 +60,6 @@
   transform: scale(2.5);
   left: 0;
   top: 0;
-}
-
-.items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
-}
-
-.items li {
-  padding-top: 10px;
-  color: currentColor;
-}
-
-.items ul {
-  list-style: none;
-  padding-inline-start: 20px;
-}
-
-.items li div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.items li:first-child {
-  padding-top: 0;
-}
-
-.items li strong {
-  display: block;
-  font-size: larger;
-  color: currentColor;
 }
 
 .date {

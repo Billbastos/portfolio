@@ -3,14 +3,18 @@
   flex-direction: column;
   width: 100%;
   background: var(--game-bg-color);
-  background: linear-gradient(0deg, var(--game-bg-color) 0%, var(--game-bg-color-30) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--game-bg-color) 0%,
+    var(--game-bg-color-30) 100%
+  );
 }
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 0 80px 120px;
+  padding: 3rem 0 3rem 6rem;
 }
 
 .return-link {
@@ -22,6 +26,7 @@
 
 .content {
   text-align: left;
+  color: #ffffff;
   flex: 1;
 }
 
@@ -71,5 +76,4 @@
 
 .items li strong {
   display: block;
-  color: var(--text-color);
 }

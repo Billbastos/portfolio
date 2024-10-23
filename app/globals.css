@@ -5,46 +5,6 @@
   --border-medium-error-color: #d63d07;
   --text-error-color: #e53e3e;
   --text-color: #000;
-/* 
-  --text-shaded-color: hsl(201, 25%, 13%);
-  --text-shaded-color-10: hsl(201, 25%, 18%);
-  --text-shaded-color-20: hsl(201, 25%, 23%);
-  --text-shaded-color-30: hsl(201, 25%, 28%);
-  --text-shaded-color-40: hsl(201, 25%, 33%);
-  --text-shaded-color-50: hsl(201, 25%, 38%);
-  --text-shaded-color-60: hsl(201, 25%, 43%);
-  --text-shaded-color-70: hsl(201, 25%, 48%);
-  --text-shaded-color-80: hsl(201, 25%, 53%);
-  --text-shaded-color-90: hsl(201, 25%, 58%);
-  --text-shaded-color-100: hsl(201, 25%, 63%);
-
-  --link-color: var(--text-shaded-color);
-  --link-color-10: var(--text-shaded-color-10);
-  --link-color-20: var(--text-shaded-color-20);
-  --link-color-30: var(--text-shaded-color-30);
-  --link-color-40: hsl(201, 25%, 32%);
-  --link-color-50: hsl(201, 25%, 39%);
-  --link-color-60: hsl(201, 25%, 46%);
-  --link-color-70: hsl(201, 25%, 53%);
-  --link-color-80: hsl(201, 25%, 60%);
-  --link-color-90: hsl(201, 25%, 67%);
-  --link-color-100: hsl(201, 25%, 74%);
-  --link-color-110: hsl(201, 25%, 81%);
-  --link-color-120: hsl(201, 25%, 88%); */
-
-
-  --text-shaded-color: hsl(286, 54%, 33%);
-  --text-shaded-color-10: hsl(286, 54%, 37%);
-  --text-shaded-color-20: hsl(286, 54%, 41%);
-  --text-shaded-color-30: hsl(286, 54%, 45%);
-  --text-shaded-color-40: hsl(286, 54%, 49%);
-  --text-shaded-color-50: hsl(286, 54%, 53%);
-  --text-shaded-color-60: hsl(286, 54%, 57%);
-  --text-shaded-color-70: hsl(286, 54%, 61%);
-  --text-shaded-color-80: hsl(286, 54%, 65%);
-  --text-shaded-color-90: hsl(286, 54%, 69%);
-  --text-shaded-color-100: hsl(286, 54%, 73%);
-
 
   --link-color: #000;
   --link-color-10: hsl(0, 0%, 8%);
@@ -53,62 +13,64 @@
   --link-color-40: var(--link-color-10);
   --link-color-50: hsl(0, 0%, 16%);
   --link-color-60: hsl(0, 0%, 24%);
-  --link-color-70:  hsl(0, 0%, 32%);
+  --link-color-70: hsl(0, 0%, 32%);
   --link-color-80: hsl(0, 0%, 40%);
-  --link-color-90:  hsl(0, 0%, 48%);
+  --link-color-90: hsl(0, 0%, 48%);
   --link-color-100: hsl(0, 0%, 56%);
   --link-color-110: hsl(0, 0%, 64%);
   --link-color-120: hsl(0, 0%, 72%);
 
-  --blog-bg-color: hsl(177, 83%, 26%);
-  --blog-bg-color-10: hsl(177, 83%, 30%);
-  --blog-bg-color-20: hsl(177, 83%, 34%);
-  --blog-bg-color-30: hsl(177, 83%, 38%);
-  --blog-bg-color-40: hsl(177, 83%, 42%);
-  --blog-bg-color-50: hsl(177, 83%, 46%);
-  --blog-bg-color-60: hsl(177, 83%, 50%);
-  --blog-bg-color-70: hsl(177, 83%, 54%);
-  --blog-bg-color-80: hsl(177, 83%, 58%);
-  --blog-bg-color-90: hsl(177, 83%, 62%);
-  --blog-bg-color-100: hsl(177, 83%, 66%);
-  --blog-bg-color-110: hsl(177, 83%, 70%);
+  --text-shaded-color: var(--link-color-70);
 
-  --game-bg-color: hsl(43, 98%, 47%);
-  --game-bg-color-10: hsl(43, 98%, 54%);
-  --game-bg-color-20: hsl(44, 98%, 58%);
-  --game-bg-color-30: hsl(45, 98%, 62%);
-  --game-bg-color-40: hsl(46, 98%, 66%);
-  --game-bg-color-50: hsl(47, 98%, 70%);
-  --game-bg-color-60: hsl(48, 98%, 74%);
-  --game-bg-color-70: hsl(49, 98%, 78%);
-  --game-bg-color-80: hsl(49, 98%, 82%);
-  --game-bg-color-90: hsl(49, 98%, 86%);
-  --game-bg-color-100: hsl(49, 98%, 90%);
-  --game-bg-color-110: hsl(49, 98%, 94%);
+  --blog-bg-color: hsl(153, 74%, 20%);
+  --blog-bg-color-10: hsl(153, 74%, 24%);
+  --blog-bg-color-20: hsl(153, 74%, 28%);
+  --blog-bg-color-30: hsl(153, 74%, 32%);
+  --blog-bg-color-40: hsl(153, 74%, 36%);
+  --blog-bg-color-50: hsl(153, 74%, 40%);
+  --blog-bg-color-60: hsl(153, 74%, 44%);
+  --blog-bg-color-70: hsl(153, 74%, 48%);
+  --blog-bg-color-80: hsl(153, 74%, 52%);
+  --blog-bg-color-90: hsl(153, 74%, 56%);
+  --blog-bg-color-100: hsl(153, 74%, 60%);
+  --blog-bg-color-110: hsl(153, 74%, 64%);
 
-  --about-bg-color: hsl(21, 100%, 44%);
-  --about-bg-color-10: hsl(21, 100%, 49%);
-  --about-bg-color-20: hsl(21, 100%, 54%);
-  --about-bg-color-30: hsl(21, 100%, 59%);
-  --about-bg-color-40: hsl(21, 100%, 63%);
-  --about-bg-color-50: hsl(21, 100%, 67%);
-  --about-bg-color-60: hsl(21, 100%, 71%);
-  --about-bg-color-70: hsl(21, 100%, 75%);
-  --about-bg-color-80: hsl(21, 100%, 79%);
-  --about-bg-color-90: hsl(21, 100%, 83%);
-  --about-bg-color-100: hsl(21, 100%, 87%);
-  --about-bg-color-110:  hsl(21, 100%, 91%);
+  --game-bg-color: hsl(11, 88%, 24%);
+  --game-bg-color-10: hsl(11, 88%, 28%);
+  --game-bg-color-20: hsl(11, 88%, 32%);
+  --game-bg-color-30: hsl(11, 88%, 36%);
+  --game-bg-color-40: hsl(11, 88%, 40%);
+  --game-bg-color-50: hsl(11, 88%, 44%);
+  --game-bg-color-60: hsl(11, 88%, 48%);
+  --game-bg-color-70: hsl(11, 88%, 52%);
+  --game-bg-color-80: hsl(11, 88%, 56%);
+  --game-bg-color-90: hsl(11, 88%, 60%);
+  --game-bg-color-100: hsl(11, 88%, 64%);
+  --game-bg-color-110: hsl(11, 88%, 68%);
 
-  --contact-bg-color: hsl(286, 54%, 33%);
-  --contact-bg-color-10: hsl(286, 54%, 37%);
-  --contact-bg-color-20: hsl(286, 54%, 41%);
-  --contact-bg-color-30: hsl(286, 54%, 45%);
-  --contact-bg-color-40: hsl(286, 54%, 49%);
-  --contact-bg-color-50: hsl(286, 54%, 53%);
-  --contact-bg-color-60: hsl(286, 54%, 57%);
-  --contact-bg-color-70: hsl(286, 54%, 61%);
-  --contact-bg-color-80: hsl(286, 54%, 65%);
-  --contact-bg-color-90: hsl(286, 54%, 69%);
+  --about-bg-color: hsl(208, 87%, 28%);
+  --about-bg-color-10: hsl(208, 87%, 32%);
+  --about-bg-color-20: hsl(208, 87%, 36%);
+  --about-bg-color-30: hsl(208, 87%, 40%);
+  --about-bg-color-40: hsl(208, 87%, 44%);
+  --about-bg-color-50: hsl(208, 87%, 48%);
+  --about-bg-color-60: hsl(208, 87%, 52%);
+  --about-bg-color-70: hsl(208, 87%, 56%);
+  --about-bg-color-80: hsl(208, 87%, 60%);
+  --about-bg-color-90: hsl(208, 87%, 64%);
+  --about-bg-color-100: hsl(208, 87%, 68%);
+  --about-bg-color-110: hsl(208, 87%, 72%);
+
+  --contact-bg-color: hsl(285, 59%, 25%);
+  --contact-bg-color-10: hsl(285, 59%, 29%);
+  --contact-bg-color-20: hsl(285, 59%, 33%);
+  --contact-bg-color-30: hsl(285, 59%, 37%);
+  --contact-bg-color-40: hsl(285, 59%, 41%);
+  --contact-bg-color-50: hsl(285, 59%, 45%);
+  --contact-bg-color-60: hsl(285, 59%, 49%);
+  --contact-bg-color-70: hsl(285, 59%, 53%);
+  --contact-bg-color-80: hsl(285, 59%, 57%);
+  --contact-bg-color-90: hsl(285, 59%, 61%);
 
   --palette-grey: hsl(197, 10%, 25%);
   --palette-grey-10: hsl(197, 10%, 29%);
@@ -127,11 +89,10 @@
   --background-grey: hsl(180, 10%, 98%);
   --background-grey-darker: hsl(180, 10%, 90%);
 
-  --footer-text-lighter-color: var(--text-shaded-color-100);
-  --footer-text-color: var(--text-shaded-color-80);
-  --footer-bg-darker-color: var(--text-shaded-color);
-  --footer-bg-lighter-color: var(--footer-text-lighter-color);
-
+  --footer-text-lighter-color: var(--background-grey);
+  --footer-text-color: var(--palette-grey-110);
+  --footer-bg-darker-color: var(--palette-grey);
+  --footer-bg-lighter-color: var(--palette-grey-120);
 }
 
 * {
@@ -140,14 +101,12 @@
 
 html {
   font-family: 'Lato', sans-serif;
-  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
-  height: 100%;
   margin: 0;
   background-color: #ffffff;
 }
@@ -156,8 +115,8 @@ main {
   flex: 1;
   text-align: center;
   margin: 0 auto;
-  max-width: 1440px;
-  padding: 0 80px;
+  max-width: 200rem;
+  padding: 0 1rem;
 }
 
 section {

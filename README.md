@@ -31,23 +31,29 @@ The main technologies used in these projects are:
 To get started with the projects, follow these steps:
 
 1. Clone the repository:
+
 ```sh
 git clone https://github.com/Billbastos/portfolio.git
 ```
+
 2. Navigate to the project folder you want to run:
+
 ```sh
-cd portfolio/project-folder
+cd portfolio
 ```
+
 3. Install dependencies
+
 ```sh
 yarn install
 ```
 
 ## Usage
 
-To run a project, use the following command:
+To run a project in local env, use the following command:
+
 ```sh
-yarn start
+yarn run dev
 ```
 
 ## Contributing
@@ -61,6 +67,3 @@ This repository is not licensed. Please contact the repository owner for any usa
 ## Contact
 
 For any questions or inquiries, you can reach me at [Billbastos](https://github.com/Billbastos).
-
-
-

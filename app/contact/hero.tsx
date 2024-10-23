@@ -12,9 +12,6 @@ const Hero = () => {
           <h1>Contact</h1>
           <ContactForm />
         </div>
-        <div className={avatar}>
-          <Image src={assetGif} width={320} height={320} alt='animated robot' />
-        </div>
       </div>
     </div>
   )

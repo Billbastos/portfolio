@@ -1,23 +1,26 @@
 .wrapper {
   width: 100%;
+  height: 20rem;
   color: #ffffff;
-  min-height: 498px;
-  padding-bottom: 80px;
+  padding-bottom: 3rem;
   background: var(--contact-bg-color);
-  background: linear-gradient(0deg, var(--contact-bg-color) 0%, var(--contact-bg-color-50) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--contact-bg-color) 0%,
+    var(--contact-bg-color-50) 100%
+  );
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 80px;
+  max-width: 80rem;
+  padding: 3rem 6rem;
   height: 100%;
 }
 
 .content {
   text-align: left;
-  width: 960px;
+  max-width: 960px;
 }

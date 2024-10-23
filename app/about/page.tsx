@@ -13,40 +13,53 @@ const AboutPage = async () => {
         <section>
           <h2>Experiences</h2>
           <p>
-            Over the years, I've had the chance to work on some pretty exciting
-            projects. At Twilio/Segment, I led the charge on speeding up website
-            development with a slick design system, built reusable React/NextJS
-            components, and rolled out a consent management solution to keep
-            things GDPR/CCPA-compliant. I even boosted user signups by over 300%
-            with a killer marketing page! Before that, at Global Relay, I
-            developed a web messaging app, setting up React components and
-            automating workflows, saving tons of time. At Central 1, I
-            spearheaded key projects like Vancity's Visa Alerts and enhanced
-            online banking solutions. Going further back, at Unimed do Brasil, I
-            revamped a nationwide appointment system and led UX redesign
-            efforts, making the platform much more efficient and user-friendly.
-            Now, I’m stoked to dive headfirst into game development and see
-            where this new chapter takes me!
+            Over the years, I've worked on exciting projects across my career.
+            At Twilio/Segment, I led the development of a design system, built
+            reusable React/NextJS components, and implemented a
+            GDPR/CCPA-compliant consent management solution. I also increased
+            user signups by 300% with a new marketing page.
+          </p>
+          <p>
+            At Global Relay, I developed a web messaging app with React and
+            automated workflows. At Central 1, I led key projects like Vancity's
+            Visa Alerts and improved online banking solutions.
+          </p>
+          <p>
+            Earlier, at Unimed do Brasil, I revamped a nationwide appointment
+            system and led a UX redesign. Now, I’m excited to dive into game
+            development!
           </p>
         </section>
         <section>
           <h2>Skills</h2>
           <p>
-            I'm an independent gameplay and tools engineering contractor,
-            currently based in Edinburgh, UK. I work with a wide variety of
-            clients, from individuals looking for As an independent contractor,
-            I take a lot of joy in being able to continually work on a variety
-            of different project.
+            I specialize in front-end programming, working extensively with
+            technologies like React and TypeScript to create dynamic,
+            user-friendly interfaces.
+          </p>
+          <p>
+            I’m also familiar with design tools like Figma and Photoshop, which
+            help me bring a creative edge to my work. I thrive in collaborative
+            environments, enjoying teamwork and contributing to shared goals.
+          </p>
+          <p>
+            {' '}
+            Currently, I’m also diving into game development, expanding my
+            skills and exploring new creative possibilities.
           </p>
         </section>
         <section>
           <h2>Hobbies</h2>
           <p>
-            I'm an independent gameplay and tools engineering contractor,
-            currently based in Edinburgh, UK. I work with a wide variety of
-            clients, from individuals looking for As an independent contractor,
-            I take a lot of joy in being able to continually work on a variety
-            of different project.
+            In my free time, I love diving into comics, especially classic ones
+            with rich stories and bold artwork. I also enjoy playing retro video
+            games, which take me back to simpler times with their nostalgic
+            graphics and gameplay.
+          </p>
+          <p>
+            On the creative side, I like building things at home—whether it’s
+            DIY projects or tinkering with gadgets, I’m always working on
+            something hands-on.
           </p>
         </section>
       </main>

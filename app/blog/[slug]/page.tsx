@@ -11,11 +11,11 @@ import { notFound } from 'next/navigation'
 export async function generateMetadata({ params }) {
   const posts = await getPosts()
   const post = posts.find((game) => game.slug === params.slug)
-  
+
   if (!post) {
     notFound()
   }
-  
+
   const { title, description, image } = post
 
   return {
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
 const PostDetailsPage = async ({ params }) => {
   const games = await getGames()
   const posts = await getPosts()
-  const { wrapper } = classes
+  const { wrapper, items } = classes
   const post = posts.find((post) => post.slug === params.slug)
 
   if (!post) {
@@ -40,22 +40,38 @@ const PostDetailsPage = async ({ params }) => {
     <>
       <Hero {...props} />
       <main className={wrapper}>
-        <StructuredText
-          data={content}
-          customNodeRules={[
-            renderNodeRule(isCode, ({ node, key }) => {
-              return <CodeHighlight key={key} node={node} />
-            }),
-          ]}
-          renderBlock={({ record }: any) => {
-            switch (record.__typename) {
-              case 'ImageContentRecord':
-                return <Image record={record} />
-              default:
-                return null
-            }
-          }}
-        />
+        <ul className={items}>
+          <li>
+            <div>
+              <strong>Table of Contents</strong>
+            </div>
+          </li>
+          <li>
+            <ul>
+              {props.tableOfContents.map((contents) => {
+                return <li key={contents}>{contents}</li>
+              })}
+            </ul>
+          </li>
+        </ul>
+        <div>
+          <StructuredText
+            data={content}
+            customNodeRules={[
+              renderNodeRule(isCode, ({ node, key }) => {
+                return <CodeHighlight key={key} node={node} />
+              }),
+            ]}
+            renderBlock={({ record }: any) => {
+              switch (record.__typename) {
+                case 'ImageContentRecord':
+                  return <Image record={record} />
+                default:
+                  return null
+              }
+            }}
+          />
+        </div>
       </main>
       <CardSection
         cards={games}

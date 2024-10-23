@@ -2,9 +2,7 @@ import classes from './hero.module.css'
 import { FC } from 'react'
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
-import {
-  FaArrowLeft,
-} from 'react-icons/fa'
+import { FaArrowLeft } from 'react-icons/fa'
 import Button from '@/components/button/button'
 
 export interface GameDetailsPageProps {
@@ -40,7 +38,7 @@ const Hero: FC<GameDetailsPageProps> = ({
     <div className={wrapper}>
       <div className={hero}>
         <div className={content}>
-      <h1>{title}</h1>
+          <h1>{title}</h1>
           <ul className={items}>
             <li>
               <div>
@@ -74,7 +72,7 @@ const Hero: FC<GameDetailsPageProps> = ({
             </li>
           </ul>
           <div className={returnLink}>
-            <Button as='a' variant='link' href='/game' reverse animate>
+            <Button as='a' variant='link' href='/game' reverse animate mono>
               <FaArrowLeft />
               Back to Games
             </Button>

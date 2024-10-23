@@ -14,7 +14,6 @@ interface Author {
 }
 export interface GameDetailsPageProps {
   title: string
-  tableOfContents: string[]
   description: string
   image: StaticImageData
   dateCreated: string
@@ -25,7 +24,6 @@ export interface GameDetailsPageProps {
 const Hero: FC<GameDetailsPageProps> = ({
   title,
   description,
-  tableOfContents,
   authors,
   dateCreated,
   categories,
@@ -59,7 +57,6 @@ const Hero: FC<GameDetailsPageProps> = ({
                   <Avatar size='2.5rem' src={author.avatar.url} />
                   <div style={{ flexGrow: 1 }}>{author.name} </div>
                   {index < authors.length - 1 && <span>,</span>}
-               
                 </div>
               )
             })}
@@ -78,20 +75,6 @@ const Hero: FC<GameDetailsPageProps> = ({
               </div>
             )}
           </div>
-          <ul className={items}>
-            <li>
-              <div>
-                <strong>Table of Contents</strong>
-              </div>
-            </li>
-            <li>
-              <ul>
-                {tableOfContents.map((contents) => {
-                  return <li key={contents}>{contents}</li>
-                })}
-              </ul>
-            </li>
-          </ul>
           <div className={heading}>
             <p>{description}</p>
             <Button as='a' variant='link' href='/blog' reverse animate mono>

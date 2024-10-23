@@ -1,10 +1,47 @@
 .wrapper {
+  display: flex;
+  align-items: flex-start;
   text-align: left;
-  padding: 80px;
+  padding: 6rem;
   width: 1440px;
   margin: 0 auto;
+  column-gap: 3rem;
 }
 
 .wrapper h1:first-child {
   margin-top: 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.items li {
+  padding-top: 10px;
+  color: currentColor;
+}
+
+.items ul {
+  list-style: none;
+  padding-inline-start: 20px;
+}
+
+.items li div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.items li:first-child {
+  padding-top: 0;
+}
+
+.items li strong {
+  display: block;
+  font-size: larger;
+  color: currentColor;
 }
