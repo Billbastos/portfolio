@@ -1,4 +1,3 @@
-import { FaDoorClosed } from 'react-icons/fa'
 import Link from 'next/link'
 import classes from './not-found.module.css'
 import Image from 'next/image'
