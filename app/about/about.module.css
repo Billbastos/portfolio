@@ -4,3 +4,24 @@
   width: 92rem;
   margin: 0 auto;
 }
+
+.heading {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 0.25rem;
+  background-color: var(--about-bg-color-30);
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 2rem;
+    width: 100%;
+  }
+}

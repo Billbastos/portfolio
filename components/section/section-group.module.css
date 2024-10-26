@@ -11,3 +11,13 @@
   grid-template-areas: 'copy contents';
   grid-template-columns: 600px 500px;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem 0 2rem;
+    width: 100%;
+  }
+}

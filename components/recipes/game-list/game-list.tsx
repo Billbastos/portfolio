@@ -3,7 +3,7 @@ import SectionGroup, {
   SectionContents,
   SectionCopy,
 } from '@/components/section'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '@/components/button/button'
 import classes from './game-list.module.css'
 import Pagination from '@/components/pagination/pagination'
@@ -11,13 +11,23 @@ import { usePagination } from '@/components/pagination/usePagination'
 import { FaArrowRight } from 'react-icons/fa'
 import { useRouter } from 'next/navigation'
 
-const GameList = ({ title, list, reverse = false, preview = false }) => {
+const GameList = ({
+  title,
+  list,
+  reverse = false,
+  preview = false,
+  color = 'currentColor',
+}) => {
   const { pages, currentPage, items, previous, next } = usePagination(list)
   const router = useRouter()
 
   const [itemHovered, setItemHovered] = useState<boolean[]>(
     Array(list.length).fill(false)
   )
+
+  useEffect(() => {
+    document.documentElement.style.setProperty('--custom-color', color)
+  }, [color])
 
   const handleItemHovered = (isHovered: boolean, index: number) => {
     setItemHovered((prevState) => {
@@ -27,7 +37,7 @@ const GameList = ({ title, list, reverse = false, preview = false }) => {
     })
   }
 
-  const { wrapper, heading } = classes
+  const { wrapper, heading, button } = classes
   return (
     <main className={wrapper}>
       <h1>{title}</h1>
@@ -44,7 +54,12 @@ const GameList = ({ title, list, reverse = false, preview = false }) => {
             style={{ cursor: 'pointer' }}
           />
           <SectionCopy>
-            <h2 className={heading}>{item.title}</h2>
+            <h2
+              className={heading}
+              style={{ after: { backgroundColor: color } }}
+            >
+              {item.title}
+            </h2>
             <p>{item.description}</p>
             <Button
               href={item.url}
@@ -61,9 +76,11 @@ const GameList = ({ title, list, reverse = false, preview = false }) => {
         </SectionGroup>
       ))}
       {preview ? (
-        <Button variant='secondary' href='/game' as='a'>
-          View all game projects
-        </Button>
+        <div className={button}>
+          <Button variant='secondary' href='/game' as='a'>
+            View all game projects
+          </Button>
+        </div>
       ) : (
         <Pagination
           pages={pages}

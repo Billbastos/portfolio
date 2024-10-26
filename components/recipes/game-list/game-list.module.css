@@ -9,3 +9,24 @@
 .heading {
   margin: 10px 0 20px;
 }
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 0.25rem;
+  background-color: var(--custom-color);
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 2rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .button {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

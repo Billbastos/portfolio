@@ -15,6 +15,7 @@ const Home = async () => {
         title='Featured Games'
         reverse={true}
         preview={true}
+        color='var(--contact-bg-color-40)'
       />
       <CardSection
         cards={posts}

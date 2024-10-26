@@ -5,13 +5,13 @@ import { getPosts } from '@/lib/queries'
 
 const AboutPage = async () => {
   const posts = await getPosts()
-  const { wrapper } = classes
+  const { wrapper, heading } = classes
   return (
     <>
       <Hero />
       <main className={wrapper}>
         <section>
-          <h2>Experiences</h2>
+          <h2 className={heading}>Experiences</h2>
           <p>
             Over the years, I've worked on exciting projects across my career.
             At Twilio/Segment, I led the development of a design system, built
@@ -31,7 +31,7 @@ const AboutPage = async () => {
           </p>
         </section>
         <section>
-          <h2>Skills</h2>
+          <h2 className={heading}>Skills</h2>
           <p>
             I specialize in front-end programming, working extensively with
             technologies like React and TypeScript to create dynamic,
@@ -49,7 +49,7 @@ const AboutPage = async () => {
           </p>
         </section>
         <section>
-          <h2>Hobbies</h2>
+          <h2 className={heading}>Hobbies</h2>
           <p>
             In my free time, I love diving into comics, especially classic ones
             with rich stories and bold artwork. I also enjoy playing retro video

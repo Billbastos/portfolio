@@ -19,13 +19,32 @@
 }
 
 .content {
+  grid-area: content;
   text-align: left;
   flex: 2;
   color: #ffffff;
 }
 
 .avatar {
+  grid-area: avatar;
   padding-top: 4rem;
   width: 100%;
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-bottom: 1rem;
+  }
+  .hero {
+    display: grid;
+    grid-template-areas: 'avatar' 'content';
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .avatar {
+    padding-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
