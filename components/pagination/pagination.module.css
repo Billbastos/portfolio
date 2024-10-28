@@ -23,19 +23,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--link-color-120);
+  background-color: var(--link-color-200);
   border: 1px solid var(--link-color-80);
   border-radius: 50%;
   padding: 5px;
   width: 2rem;
   height: 2rem;
-  color: var(--link-color-30);
-}
-
-.arrow.active {
-  background-color: var(--link-color);
-  color: #fff;
-  border: none;
+  color: var(--link-color-60);
 }
 
 .button.active {
@@ -51,15 +45,18 @@
 
 .arrow:hover,
 .button:hover {
-  color: var(--link-color-30);
+  color: var(--link-color);
+  cursor: pointer;
 }
 
 .arrow:hover {
   border-color: var(--link-color-30);
 }
 
+.arrow.disabled,
 .arrow.disabled:hover,
+.button.disabled,
 .button.disabled:hover {
-  color: var(--link-color-80);
-  border-color: var(--link-color-80);
+  color: var(--link-color-120);
+  border-color: var(--link-color-120);
 }

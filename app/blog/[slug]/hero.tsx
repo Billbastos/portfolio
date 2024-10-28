@@ -36,14 +36,12 @@ const Hero: FC<GameDetailsPageProps> = ({
     wrapper,
     section,
     'hero-image': heroImage,
-    items,
     heading,
     date,
     'meta-data': metaData,
     author,
     avatar,
     title: titleClass,
-    and,
   } = classes
   return (
     <div className={wrapper}>
@@ -56,7 +54,6 @@ const Hero: FC<GameDetailsPageProps> = ({
                 <div key={author.name} className={avatar}>
                   <Avatar size='2.5rem' src={author.avatar.url} />
                   <div style={{ flexGrow: 1 }}>{author.name} </div>
-                  {index < authors.length - 1 && <span>,</span>}
                 </div>
               )
             })}

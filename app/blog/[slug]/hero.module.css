@@ -36,12 +36,14 @@
 }
 
 .content {
+  grid-area: content;
   text-align: left;
   flex: 1;
   color: currentColor;
 }
 
 .image-wrapper {
+  grid-area: image;
   width: 100%;
   flex: 1;
 }
@@ -93,4 +95,41 @@
   gap: 5px;
   align-items: center;
   padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-areas: 'image' 'content';
+    padding: 0.5rem 0 0;
+  }
+
+  .author {
+    display: grid;
+    row-gap: 0.5rem;
+  }
+
+  .content {
+    padding: 0 2rem 3rem;
+  }
+
+  .image-wrapper {
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    padding-bottom: 2rem;
+  }
+
+  .section {
+    transition: none;
+    border-radius: 0;
+    height: 10rem;
+  }
+
+  .hero-image {
+    transform: scale(1) translateY(-33%);
+    left: 0;
+    top: 0;
+  }
 }

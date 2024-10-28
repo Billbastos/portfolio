@@ -4,6 +4,7 @@ import Link from '../link/link'
 import classes from './navigation.module.css'
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
+import { FaXmark } from 'react-icons/fa6'
 
 const Navigation = () => {
   const { nav } = classes
@@ -33,17 +34,26 @@ const MobileLinks = () => {
   return (
     <div className={navItems}>
       <div className={mobileNav}>
-        <FaBars
-          size={24}
-          onClick={() => setOpen(!open)}
-          aria-label='Open Navigation'
-        />
+        {!open ? (
+          <FaBars
+            size={24}
+            onClick={() => setOpen(!open)}
+            aria-label='Open Navigation'
+          />
+        ) : (
+          <FaXmark
+            size={24}
+            onClick={() => setOpen(!open)}
+            aria-label='Close Navigation'
+          />
+        )}
       </div>
       {open && (
         <ul>
           <li>
             <Link
               className={`${about} ${pathname === '/about' && active}`}
+              onClick={() => setOpen(false)}
               href='/about'
             >
               About
@@ -52,6 +62,7 @@ const MobileLinks = () => {
           <li>
             <Link
               className={`${game} ${pathname.includes('/game') && active}`}
+              onClick={() => setOpen(false)}
               href='/game'
             >
               Games
@@ -60,6 +71,7 @@ const MobileLinks = () => {
           <li>
             <Link
               className={`${blog} ${pathname.includes('/blog') && active}`}
+              onClick={() => setOpen(false)}
               href='/blog'
             >
               Blog
@@ -68,6 +80,7 @@ const MobileLinks = () => {
           <li>
             <Link
               className={`${contact} ${pathname === '/contact' && active}`}
+              onClick={() => setOpen(false)}
               href='/contact'
             >
               Contact

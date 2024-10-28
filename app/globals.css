@@ -19,6 +19,7 @@
   --link-color-100: hsl(0, 0%, 56%);
   --link-color-110: hsl(0, 0%, 64%);
   --link-color-120: hsl(0, 0%, 72%);
+  --link-color-200: hsl(0, 0%, 94%);
 
   --text-shaded-color: var(--link-color-70);
 
@@ -123,10 +124,6 @@ section {
   text-align: left;
 }
 
-section p {
-  font-size: 1rem;
-}
-
 h1 {
   font-size: 3rem;
   margin: 3rem auto 1rem;
@@ -148,6 +145,7 @@ h2 {
 
 p {
   font-size: 1.2rem;
+  font-weight: 200;
 }
 
 @media (max-width: 768px) {

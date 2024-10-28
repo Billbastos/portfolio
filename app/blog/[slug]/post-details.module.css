@@ -45,3 +45,15 @@
   font-size: larger;
   color: currentColor;
 }
+
+@media (max-width: 768px) {
+  .items {
+    display: none;
+  }
+
+  .wrapper {
+    display: block;
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+}

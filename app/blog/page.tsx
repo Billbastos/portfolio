@@ -6,11 +6,9 @@ export const metadata = {
   description: 'Portfolio blog posts',
 }
 
-const GamesPage = async () => {
+const BlogPage = async () => {
   const posts = await getPosts()
-  return (
-      <PostList list={posts} title='Blog' />
-  )
+  return <PostList list={posts} title='Blog' color='var(--blog-bg-color-30)' />
 }
 
-export default GamesPage
+export default BlogPage

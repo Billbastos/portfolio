@@ -3,7 +3,7 @@ import SectionGroup, {
   SectionContents,
   SectionCopy,
 } from '@/components/section'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Button from '@/components/button/button'
 import Pagination from '@/components/pagination/pagination'
@@ -13,13 +13,17 @@ import { FaArrowRight } from 'react-icons/fa'
 import Tag from '@/components/tag/tag'
 import { useRouter } from 'next/navigation'
 
-const PostList = ({ title, list }) => {
+const PostList = ({ title, list, color = 'currentColor' }) => {
   const { pages, currentPage, items, previous, next } = usePagination(list)
   const router = useRouter()
 
   const [itemHovered, setItemHovered] = useState<boolean[]>(
     Array(list.length).fill(false)
   )
+
+  useEffect(() => {
+    document.documentElement.style.setProperty('--custom-color', color)
+  }, [color])
 
   const handleItemHovered = (isHovered: boolean, index: number) => {
     setItemHovered((prevState) => {
@@ -29,7 +33,7 @@ const PostList = ({ title, list }) => {
     })
   }
 
-  const { wrapper, heading } = classes
+  const { wrapper, heading, button } = classes
   return (
     <main className={wrapper}>
       <h1>{title}</h1>

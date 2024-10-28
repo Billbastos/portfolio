@@ -54,12 +54,7 @@ const GameList = ({
             style={{ cursor: 'pointer' }}
           />
           <SectionCopy>
-            <h2
-              className={heading}
-              style={{ after: { backgroundColor: color } }}
-            >
-              {item.title}
-            </h2>
+            <h2 className={heading}>{item.title}</h2>
             <p>{item.description}</p>
             <Button
               href={item.url}

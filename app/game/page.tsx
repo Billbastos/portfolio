@@ -9,7 +9,7 @@ export const metadata = {
 const GamesPage = async () => {
   const games = await getGames()
   return (
-    <GamesList list={games} title='Games' />
+    <GamesList list={games} title='Games' color='var(--game-bg-color-30)' />
   )
 }
 
