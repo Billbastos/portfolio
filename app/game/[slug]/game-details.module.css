@@ -1,7 +1,8 @@
 .wrapper {
   text-align: left;
   padding: 6rem;
-  width: 92rem;
+  width: 100%;
+  max-width: 92rem;
   margin: 0 auto;
 }
 
