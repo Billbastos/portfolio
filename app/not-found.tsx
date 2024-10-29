@@ -15,7 +15,7 @@ const Custom404 = () => {
     door,
   } = classes
   return (
-    <div className={wrapper}>
+    <main className={wrapper}>
       <div className={tip}>
         <h1>There's no exit</h1>
         <h2>from this point.</h2>
@@ -33,7 +33,7 @@ const Custom404 = () => {
           <div>404 - return two steps.</div>
         </Link>
       </div>
-    </div>
+    </main>
   )
 }
 
