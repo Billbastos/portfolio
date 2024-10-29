@@ -30,16 +30,21 @@
 }
 
 .nav h2 a {
-  background: -webkit-linear-gradient(
+  background-image: -webkit-linear-gradient(
     135deg,
     var(--nav-custom-color),
-    var(--link-color-50),
     var(--link-color-10)
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: top left;
+  transition: all 0.5s ease;
+}
+
+.nav h2 a:hover {
+  background-position: top left 100%;
 }
 
 .nav h2 a::before {
