@@ -2,7 +2,7 @@
   max-width: 350px;
   margin: 0 auto;
   border-radius: 50%;
-  background-color: var(--palette-grey-100);
+  background-color: var(--background-grey);
   overflow: hidden;
 }
 
@@ -10,6 +10,6 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--palette-grey-100);
+  background-color: var(--background-grey);
   transform: scale(1.05);
 }
