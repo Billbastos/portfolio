@@ -3,7 +3,6 @@ import classes from './section-contents.module.css'
 
 const resizeImage = (image) => {
   const { width, height } = image
-  console.log(width, height)
   if (width > height && width > 480) {
     return {
       width: 480,
