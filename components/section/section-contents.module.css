@@ -2,7 +2,8 @@
   grid-area: contents;
   border-radius: 20px;
   overflow: hidden;
-  max-height: 320px;
+  max-width: 460px;
+  max-height: 280px;
   box-shadow: 0 1.8rem 3.8rem rgba(13, 21, 55, 0.3);
   transform: rotate(5deg) scale(0.9);
   transition: all 0.3s;

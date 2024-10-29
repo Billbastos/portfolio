@@ -3,7 +3,7 @@
   align-items: flex-start;
   text-align: left;
   padding: 6rem;
-  max-width: 92rem;
+  width: 100%;
   margin: 0 auto;
   column-gap: 3rem;
 }
@@ -44,6 +44,10 @@
   display: block;
   font-size: larger;
   color: currentColor;
+}
+
+.post-content {
+  flex: 1;
 }
 
 @media (max-width: 768px) {

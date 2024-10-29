@@ -126,9 +126,23 @@
   }
 
   .mobile-items li {
+    display: flex;
     padding: 1rem 0;
     width: 100%;
     text-align: center;
     list-style: none;
+  }
+  .mobile-items li span {
+    display: flex;
+    width: 100%;
+  }
+  .mobile-items li span a {
+    width: 100%;
+    display: block;
+  }
+  .active::after {
+    content: '';
+    left: 40%;
+    width: 20%;
   }
 }

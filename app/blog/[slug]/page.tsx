@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
 const PostDetailsPage = async ({ params }) => {
   const games = await getGames()
   const posts = await getPosts()
-  const { wrapper, items } = classes
+  const { wrapper, items, 'post-content': postContent } = classes
   const post = posts.find((post) => post.slug === params.slug)
 
   if (!post) {
@@ -54,7 +54,7 @@ const PostDetailsPage = async ({ params }) => {
             </ul>
           </li>
         </ul>
-        <div>
+        <div className={postContent}>
           <StructuredText
             data={content}
             customNodeRules={[

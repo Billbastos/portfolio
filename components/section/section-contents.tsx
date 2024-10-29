@@ -1,6 +1,23 @@
 import Image from 'next/image'
 import classes from './section-contents.module.css'
 
+const resizeImage = (image) => {
+  const { width, height } = image
+  console.log(width, height)
+  if (width > height && width > 480) {
+    return {
+      width: 480,
+      height: (480 / width) * height,
+    }
+  } else if (width < height && height > 480) {
+    return {
+      width: (480 / height) * width,
+      height: 480,
+    }
+  }
+  return { width, height }
+}
+
 const SectionContents = ({
   image,
   title,
@@ -13,6 +30,7 @@ const SectionContents = ({
     'reverse-content': reversed,
     'link-hovered': linkHovered,
   } = classes
+  const { width, height } = resizeImage(image)
   return (
     <section
       className={`${contents} ${reverse && reversed} ${
@@ -23,9 +41,9 @@ const SectionContents = ({
         <Image
           src={image.src}
           alt={title}
-          style={{ objectFit: 'cover' }}
-          width={image.width}
-          height={image.height}
+          style={{ objectFit: 'fill' }}
+          width={width}
+          height={height}
           priority
           {...rest}
         />

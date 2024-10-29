@@ -33,7 +33,7 @@ const PostList = ({ title, list, color = 'currentColor' }) => {
     })
   }
 
-  const { wrapper, heading, button } = classes
+  const { wrapper, heading } = classes
   return (
     <main className={wrapper}>
       <h1>{title}</h1>
