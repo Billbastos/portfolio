@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 1.5rem;
   padding: 3rem 0 3rem 6rem;
   color: currentColor;
 }
@@ -100,6 +101,7 @@
 @media (max-width: 768px) {
   .hero {
     display: grid;
+    grid-template-columns: 100%;
     grid-template-areas: 'image' 'content';
     padding: 0.5rem 0 0;
   }
