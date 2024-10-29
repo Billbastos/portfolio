@@ -44,7 +44,7 @@ const Social = () => {
   return (
     <div className={icons} data-testid='social-component'>
       <a
-        href='https://linkedin.com/in/guibastos'
+        href='https://linkedin.com/in/guibbastos'
         target='_blank'
         rel='noreferrer'
         title='linkedin'

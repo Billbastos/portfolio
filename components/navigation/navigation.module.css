@@ -26,7 +26,20 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   margin: 0;
-  padding: 10px 0;
+  padding: 9px 0;
+}
+
+.nav h2 a {
+  background: -webkit-linear-gradient(
+    135deg,
+    var(--nav-custom-color),
+    var(--link-color-50),
+    var(--link-color-10)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav h2 a::before {

@@ -5,9 +5,11 @@ import classes from './navigation.module.css'
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { FaXmark } from 'react-icons/fa6'
+import useLogoColor from './useLogoColor'
 
 const Navigation = () => {
   const { nav } = classes
+  useLogoColor()
   return (
     <nav className={nav}>
       <h2>
@@ -20,6 +22,7 @@ const Navigation = () => {
 }
 
 const MobileLinks = () => {
+  useLogoColor()
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
   const {
