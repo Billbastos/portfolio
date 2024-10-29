@@ -28,6 +28,7 @@ const MobileLinks = () => {
   const {
     'mobile-items': navItems,
     'mobile-nav': mobileNav,
+    'mobile-button': mobileButton,
     active,
     about,
     game,
@@ -42,12 +43,16 @@ const MobileLinks = () => {
             size={24}
             onClick={() => setOpen(!open)}
             aria-label='Open Navigation'
+            color='var(--nav-custom-color)'
+            className={mobileButton}
           />
         ) : (
           <FaXmark
             size={24}
             onClick={() => setOpen(!open)}
             aria-label='Close Navigation'
+            color='var(--nav-custom-color)'
+            className={mobileButton}
           />
         )}
       </div>

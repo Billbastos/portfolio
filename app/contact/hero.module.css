@@ -15,6 +15,9 @@
 }
 
 @media (max-width: 768px) {
+  .wrapper {
+    text-align: left;
+  }
   .hero {
     padding: 2rem 1rem;
   }

@@ -140,6 +140,9 @@
     width: 100%;
     display: block;
   }
+  .mobile-button:hover {
+    cursor: pointer;
+  }
   .active::after {
     content: '';
     left: 40%;
