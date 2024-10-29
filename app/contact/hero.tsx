@@ -6,14 +6,14 @@ import ContactForm from '@/components/form/contact-form'
 const Hero = () => {
   const { hero, content, avatar, wrapper } = classes
   return (
-    <div className={wrapper}>
+    <main className={wrapper}>
       <div className={hero}>
         <div className={content}>
           <h1>Contact</h1>
           <ContactForm />
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

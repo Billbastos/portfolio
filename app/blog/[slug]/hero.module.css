@@ -103,7 +103,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: 'image' 'content';
-    padding: 0.5rem 0 0;
+    padding: 0;
   }
 
   .author {
@@ -130,7 +130,7 @@
   }
 
   .hero-image {
-    transform: scale(1) translateY(-33%);
+    transform: scale(1) translateY(-33%) translateX(0%);
     left: 0;
     top: 0;
   }

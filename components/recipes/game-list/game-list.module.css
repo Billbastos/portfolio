@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 92rem;
-  padding-bottom: 80px;
+  padding: 0 3rem 3rem;
 }
 
 .heading {

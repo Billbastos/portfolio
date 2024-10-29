@@ -109,7 +109,7 @@ body {
   flex-direction: column;
   padding-top: 3rem;
   margin: 0;
-  background-color: #ffffff;
+  background-color: var(--footer-bg-darker-color);
 }
 
 main {
@@ -118,6 +118,7 @@ main {
   margin: 0 auto;
   max-width: 200rem;
   padding: 0 1rem;
+  background-color: #ffffff;
 }
 
 section {

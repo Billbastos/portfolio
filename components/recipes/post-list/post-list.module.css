@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 92rem;
-  padding-bottom: 80px;
+  max-width: 92rem;
+  padding: 0 3rem 3rem;
 }
 
 .heading {
