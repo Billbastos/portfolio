@@ -1,11 +1,9 @@
 .link a {
   position: relative;
-  color: var(--link-color);
-  text-decoration: none;
   padding: 0.5rem;
+  transition: color 0.5s;
 }
 
-.link a:hover,
-.link a:active {
-  color: var(--link-color-20);
+.link a:hover {
+  color: color-mix(in lab, var(--link-color-200), currentColor 65%);
 }

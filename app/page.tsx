@@ -2,13 +2,14 @@ import CardSection from '@/components/card/card-section'
 import Hero from './home/hero'
 import GamesList from '@/components/recipes/game-list/game-list'
 import { getGames, getPosts } from '@/lib/queries'
+import ThemeProvider from '../components/theme/ThemeProvider'
 
 const Home = async () => {
   const games = await getGames()
   const posts = await getPosts()
 
   return (
-    <>
+    <ThemeProvider theme='dark'>
       <Hero />
       <GamesList
         list={games.slice(0, 3)}
@@ -23,7 +24,7 @@ const Home = async () => {
         buttonTitle='View all posts'
         buttonLink='/blog'
       />
-    </>
+    </ThemeProvider>
   )
 }
 

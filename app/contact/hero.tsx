@@ -1,10 +1,8 @@
-import Image from 'next/image'
 import classes from './hero.module.css'
-import assetGif from './assets/asset.gif'
 import ContactForm from '@/components/form/contact-form'
 
 const Hero = () => {
-  const { hero, content, avatar, wrapper } = classes
+  const { hero, content, wrapper } = classes
   return (
     <main className={wrapper}>
       <div className={hero}>

@@ -1,20 +1,42 @@
+'use client'
 import NextLink from 'next/link'
-import { FC, HTMLProps } from 'react'
+import { FC, HTMLProps, useEffect, useState } from 'react'
 import classes from './link.module.css'
+import { tokens as designTokens } from '@/components/theme/design-tokens'
+import { Theme } from '../theme/ThemeProvider'
+import styled from 'styled-components'
 
-const Link: FC<HTMLProps<HTMLAnchorElement>> = ({
+interface LinkProps extends HTMLProps<HTMLAnchorElement> {
+  theme?: Theme
+  tokens?: (typeof designTokens)[Theme]
+}
+
+const Link: FC<LinkProps> = ({
+  theme = 'light',
   href,
   children,
+  tokens,
   ...rest
 }) => {
   const { link } = classes
+
   return (
     <span className={link}>
-      <NextLink href={href} {...rest}>
+      <StyledLink $tokens={tokens} href={href} {...rest}>
         {children}
-      </NextLink>
+      </StyledLink>
     </span>
   )
 }
+
+const StyledLink = styled(NextLink)<{
+  $tokens?: LinkProps['tokens']
+  theme?: Theme
+}>`
+  color: ${({ $tokens }) =>
+    ($tokens && $tokens.text.color) || 'var(--link-color)'};
+  text-decoration: ${({ $tokens }) =>
+    ($tokens && $tokens.text.decoration) || 'none'};
+` as any
 
 export default Link
