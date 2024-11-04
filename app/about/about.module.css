@@ -2,6 +2,10 @@
   text-align: left;
   padding: 4rem 6rem 6rem;
   width: 100%;
+}
+
+.wrapper section {
+  max-width: 92rem;
   margin: 0 auto;
 }
 
